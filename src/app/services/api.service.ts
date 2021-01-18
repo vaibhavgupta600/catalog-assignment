@@ -8,8 +8,6 @@ import { map } from 'rxjs/operators';
 })
 export class ApiService {
   constructor(private http: HttpClient) {}
-  selectedOption = new Subject<any>();
-  selectedCard = new Subject<any>();
 
   saveToStorage(key, data) {
     sessionStorage.setItem(key, JSON.stringify(data));
