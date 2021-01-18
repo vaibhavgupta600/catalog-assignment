@@ -1,0 +1,24 @@
+<mat-toolbar>
+    RENTAL MANAGEMENT SYSTEM &nbsp;
+
+    <div>
+        <nav>
+            <ul class="nav">
+                <li><a>Select location</a>
+                    <ul>
+                        <li *ngFor="let item of List"><a href="categories/{{item.dealers_id}}" (click)="cityData(item)">{{item.name}}</a>
+                            <ul>
+                                <li *ngFor="let branch of item.branches"><a href="categories/{{branch.branch_id}}" (click)="cityData(branch)">{{branch.name}}</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <span class="example-spacer"></span>
+    <a mat-button routerLink="/categories">
+        All Categories
+    </a>
+
+</mat-toolbar>
