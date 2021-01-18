@@ -1,0 +1,79 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+.mat-toolbar {
+  background: black;
+  color: #fff;
+}
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.u-listReset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.u-listReset li {
+  margin: 0;
+}
+
+.u-marginBottom {
+  margin-bottom: 2em !important;
+}
+
+.u-marginTopAuto {
+  margin-top: auto;
+}
+
+.u-marginAutoHorizontal {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+}
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+}
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+ul.breadcrumb li a {
+  color: #0275d8;
+  text-decoration: none;
+}
+ul.breadcrumb li a:hover {
+  color: #01447e;
+  text-decoration: underline;
+}
+.container {
+    display: block;
+    max-width: 75%;
+    margin: 0 auto;
+    padding: 1em;
+  }
+  
+html, body { height: 100%; }
+body { margin: 0; font-family: 'Roboto', sans-serif; }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

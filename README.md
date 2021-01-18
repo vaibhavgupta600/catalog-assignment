@@ -1,1 +1,2 @@
-# catalog-assignment
+run - npm i
+run - ng serve

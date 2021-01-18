@@ -1,0 +1,21 @@
+<ul class="breadcrumb">
+    <li><a href="#">Home</a></li>
+    <li>Equipment Catalog</li>
+  </ul>
+
+<div>
+    <ul class="u-listReset" *ngFor="let category of allCategories">
+        <br>
+        <h2> {{category.name}}</h2>
+        <li *ngFor="let item of category.categories">
+            <a (click)="subcategory(item)" href="subcategory/{{item.name}}">
+                <mat-card class="product-card">
+                    <mat-card-header>
+                        <mat-card-title>{{ item.name }}</mat-card-title>
+                    </mat-card-header>
+                    <img *ngIf="item.image" class="category-image" src="assets/category/{{item.image}}">
+                </mat-card>
+            </a>
+        </li>
+    </ul>
+</div>
