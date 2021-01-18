@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiService } from 'src/app/services/api.service';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-header',
@@ -12,7 +13,7 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit(): void {
     this.Api.getTaskInfo(
-      'https://6005412375860e0017c5c3c5.mockapi.io/categories'
+      environment.URL
     ).subscribe((data) => {
       this.List = data[0].data.locations;
     });

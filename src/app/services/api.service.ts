@@ -16,7 +16,7 @@ export class ApiService {
   dataFromStorage(key) {
     return JSON.parse(sessionStorage.getItem(key));
   }
-  
+
   getTaskInfo(url) {
     return this.http.get(url).pipe(
       map((res: any) => {
